@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora Tech | Home</title>
+
+    <style>
+        * {
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #1e293b;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e40af);
+            color: white;
+            padding: 100px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px;
+        }
+
+        .button:hover {
+            background-color: #7dd3fc;
+        }
+
+        /* Overview */
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+
+        .overview p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* Featured Services */
+        .services {
+            background-color: white;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .service-card {
+            background-color: #f1f5f9;
+            padding: 30px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #1d4ed8;
+            margin: 15px 0;
+        }
+
+        .service-card p {
+            line-height: 1.6;
+        }
+
+        .service-icon {
+            font-size: 40px;
+        }
+
+        /* Mission and Review */
+        .mission {
+            background-color: #e0f2fe;
+        }
+
+        .review {
+            max-width: 700px;
+            margin: 30px auto 0;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile-Friendly Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">NEXORA TECH</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Technology That Moves You Forward.</h1>
+
+        <p>
+            Smart technology solutions designed to simplify your
+            business, improve productivity, and build your future.
+        </p>
+
+        <a href="products.html" class="button">
+            Explore Our Products
+        </a>
+
+        <a href="contact.html" class="button">
+            Get in Touch
+        </a>
+    </div>
+
+    <!-- Business Overview -->
+    <section class="overview">
+        <h2>Welcome to Nexora Tech</h2>
+
+        <p>
+            Nexora Tech is a fictional technology company dedicated
+            to providing innovative IT solutions for individuals,
+            students, and small businesses. From computer support
+            to digital services, we help our customers use technology
+            more efficiently and confidently.
+        </p>
+    </section>
+
+    <!-- Featured Offerings -->
+    <section class="services">
+        <h2>What We Offer</h2>
+
+        <p>
+            Discover technology solutions built around your needs.
+        </p>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+
+                <h3>IT Support</h3>
+
+                <p>
+                    Reliable computer troubleshooting and technical
+                    assistance to keep your systems running smoothly.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+
+                <h3>Web Solutions</h3>
+
+                <p>
+                    Modern website design and digital tools that
+                    help businesses establish an online presence.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">☁️</div>
+
+                <h3>Cloud Services</h3>
+
+                <p>
+                    Convenient digital storage and collaboration
+                    solutions for improved organization and efficiency.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mission and Trust Element -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+
+        <p>
+            Our mission is to make technology accessible,
+            practical, and valuable for everyone.
+        </p>
+
+        <div class="review">
+            <p>
+                "Nexora Tech makes technology easier to understand
+                and helps businesses find smarter solutions."
+            </p>
+
+            <br>
+
+            <strong>— Sample Customer Review</strong>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Nexora Tech.
+            All Rights Reserved.
+        </p>
+
+        <p>Innovating Today. Empowering Tomorrow.</p>
+    </footer>
+
+</body>
+</html>
